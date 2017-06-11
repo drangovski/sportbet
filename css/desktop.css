@@ -1,0 +1,1380 @@
+/* ----------------------------------------------------------
+Desktop Style Sheet for SportBet
+
+version: 1.0
+created: 09 Apr 2016
+author: Bojan Drangovski
+email: bojandrango@gmail.com
+website: linkedin.com/in/drangovski
+---------------------------------------------------------- */
+
+/* ----------------------------------------------------------
+
+CONTENT:
+
+	= HEADER
+		+ Logo
+		+ Navigation container
+			- Login / Register buttons
+			- Navigation links
+
+	= HERO SECTION
+		+ Player image
+		+ Hero section text
+		+ Hero section green stripe
+		+ Hero section green stripe action
+
+	= CASINO GAMES SECTION
+		+ Casino games heading block
+		+ Casino games blocks
+		+ Casino games badge
+		+ Casino games block info
+		+ Casino games play link
+
+	= SPORTSBOOK SECTION
+
+	= GET APPLICATION SECTION
+		+ Get application buttons
+		+ Get application mobile image
+
+	= FOOTER
+		+ Footer navigation container
+		+ Footer subscription container
+		+ Footer social container
+		+ Footer copyright text
+
+	= MEDIA QUERIES
+
+---------------------------------------------------------- */
+
+
+/* ----------------------------------------------------------
+
+HEADER
+
+---------------------------------------------------------- */
+.header {
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+	}
+.header-inner {
+	width: 100%;
+	max-width: 1200px;
+	min-height: 90px;
+	margin: 0 auto;
+	padding: 0;
+	}
+/***** Logo *****/
+.header-inner .hlogo {
+	float: left;
+	width: 200px;
+	height: 40px;
+	margin: 25px 15px;
+	padding: 0;
+	}
+.header-inner .hlogo > img {
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	}
+/***** Navigation container *****/
+.navigation-cont {
+	float: right;
+	position: relative;
+	width: 100%;
+	max-width: 460px;
+	margin: 0;
+	padding: 50px 0 0 0;
+	}
+/* login / register buttons */
+.navigation-cont .log-reg-cont {
+	position: absolute;
+	top: 0;
+	right: 15px;
+	margin: 0;
+	padding: 0;
+	}
+.navigation-cont .log-reg-cont > ul {
+	float: right;
+	margin: 0;
+	padding: 0;
+	}
+.navigation-cont .log-reg-cont > ul > li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	}
+.navigation-cont .log-reg-cont > ul > li > a {
+	float: left;
+	min-width: 80px;
+	height: 25px;
+	margin: 0 1px 0 0;
+	padding: 5px 20px;
+	font-family: 'hindmedium';
+	font-size: 12px;
+	color: #548124;
+	text-align: center;
+	text-decoration: none;
+	background-color: #a1d767;
+	-webkit-transition: .3s;
+	   -moz-transition: .3s;
+	     -o-transition: .3s;
+	}
+.navigation-cont .log-reg-cont > ul > li > a:hover {
+	background-color: #abe072;
+	}
+.navigation-cont .log-reg-cont > ul > li:first-of-type > a {
+	border-radius: 0 0 0 5px;
+	}
+.navigation-cont .log-reg-cont > ul > li:last-of-type > a {
+	border-radius: 0 0 5px 0;
+	}
+/* navigation links */
+.navigation-links-cont {
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	}
+.navigation-links-cont > ul {
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	}
+.navigation-links-cont > ul > li {
+	float: left;
+	margin: 0;
+	padding: 0 20px;
+	list-style: none;
+	}
+.navigation-links-cont > ul > li > a {
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0 0px 10px 0px;
+	font-family: 'msbold';
+	font-size: 16px;
+	color: #5e5e5e;
+	text-align: center;
+	text-decoration: none;
+	border-bottom-width: 2px;
+	border-style: solid;
+	border-color: transparent;
+	-webkit-transition: .3s;
+	   -moz-transition: .3s;
+	     -o-transition: .3s;
+	}
+.navigation-links-cont > ul > li > a:hover, .navigation-links-cont > ul > li > a.active {
+	border-color: #ABE072;
+	padding: 0px 0px 3px 0px;
+}
+
+/* ----------------------------------------------------------
+
+HERO SECTION
+
+---------------------------------------------------------- */
+.hero-section {
+	float: left;
+	position: relative;
+	width: 100%;
+	height: calc(100% - 90px);
+	margin: 0;
+	padding: 0;
+	background-image: url(../images/hero-section-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	}
+.hero-section-inner {
+	position: relative;
+	width: 100%;
+	max-width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0;
+	}
+/***** Player image *****/
+img.hero-player-image {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 680px;
+	height: 637px;
+	z-index: 3;
+	}
+/***** Hero section text *****/
+.hero-section-text {
+	float: right;
+	width: 100%;
+	max-width: 580px;
+	margin: 210px 0px 0 0;
+	padding: 0 50px 0px 0px;
+	}
+.hero-section-text > h1, .hero-section-text > h2 {
+	float: left;
+	width: 100%;
+	font-family: 'msbold';
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	}
+.hero-section-text > h1 {
+	margin-top: 15px;
+	font-size: 82px;
+	}
+.hero-section-text > h2 {
+	font-size: 53px;
+	}
+.hero-section-text > p {
+	float: left;
+	width: 100%;
+	margin: 20px 0 0 0;
+	padding: 0;
+	font-family: 'hindlight';
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	line-height: 1.5;
+	}
+/***** Hero section green stripe *****/
+.hero-section-stripe {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 90px;
+	margin: 0;
+	padding: 0;
+	background-color: #a1d767;
+	z-index: 2;
+	}
+.hero-section-stripe:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 74%;
+	height: 90px;
+	background-image: url(../images/green-stripe-active-arrows.png), url(../images/green-stripe-arrows.png);
+	background-repeat: no-repeat, repeat-x;
+	background-position: center left -93px, center left;
+
+	-webkit-animation: animateStripeArrows 5s infinite;
+	   -moz-animation: animateStripeArrows 5s infinite;
+	     -o-animation: animateStripeArrows 5s infinite;
+	        animation: animateStripeArrows 5s infinite;
+	}
+.hero-section-stripe:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 26%;
+	height: 90px;
+	background-image: url(../images/green-stripe-active-arrows.png), url(../images/green-stripe-arrows.png);
+	background-repeat: no-repeat, repeat-x;
+	background-position: center left -93px, center left;
+
+	-webkit-transform: rotate(-180deg);
+	   -moz-transform: rotate(-180deg);
+	    -ms-transform: rotate(-180deg);
+	     -o-transform: rotate(-180deg);
+	        transform: rotate(-180deg);
+	-webkit-animation: animateStripeArrows 5s infinite;
+	   -moz-animation: animateStripeArrows 5s infinite;
+	     -o-animation: animateStripeArrows 5s infinite;
+	        animation: animateStripeArrows 5s infinite;
+	}
+@-webkit-keyframes animateStripeArrows {
+	0%   { background-position: center left -93px, center left; }
+	100% { background-position: center right -93px, center left; }
+	}
+@-moz-keyframes animateStripeArrows {
+	0%   { background-position: center left -93px, center left; }
+	100% { background-position: center right -93px, center left; }
+	}
+@-o-keyframes animateStripeArrows {
+	0%   { background-position: center left -93px, center left; }
+	100% { background-position: center right -93px, center left; }
+	}
+@keyframes animateStripeArrows {
+	0%   { background-position: center left -93px, center left; }
+	100% { background-position: center right -93px, center left; }
+	}
+
+/* Hero section green stripe action */
+.hero-section-stripe-action {
+	position: absolute;
+	top: 0;
+	right: 15px;
+	height: 90px;
+	margin: 0 20% 0 0;
+	padding: 19px 25px;
+	background-color: #a1d767;
+	z-index: 4;
+	}
+.hero-section-stripe-action > span {
+	float: left;
+	margin: 0;
+	padding: 2px 20px 0 0;
+	font-family: 'msbold';
+	font-size: 24px;
+	color: #5b8929;
+	text-align: right;
+	text-transform: uppercase;
+	}
+.hero-section-stripe-action > a {
+	float: left;
+	width: 235px;
+	height: 52px;
+	margin: 0 0 0 20px;
+	padding: 12px 10px;
+	font-family: 'msbold';
+	font-size: 22px;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-width: 3px;
+	border-style: solid;
+	border-color: #fff;
+	border-radius: 5px;
+	position: relative;
+	}
+.hero-section-stripe-action > a:after {
+	content: "";
+	width: 233px;
+	height: 50px;
+	position: absolute;
+	top: -3px;
+	left: -3px;
+	border-width: 1px;
+	border-style: dashed;
+	border-color: #ffffff;
+	border-radius: 6px;
+	-webkit-transition: .1s;
+	   -moz-transition: .1s;
+	     -o-transition: .1s;
+	-webkit-transition-delay: .1s;
+	   -moz-transition-delay: .1s;
+	     -o-transition-delay: .1s; 
+}
+.hero-section-stripe-action > a:hover:after {
+	width: 239px;
+	height: 56px;
+	left: -6px;
+	top: -6px;
+	border-color: #ffffff;
+}
+/* ----------------------------------------------------------
+
+CASINO GAMES SECTION
+
+---------------------------------------------------------- */
+.casino-games-section {
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 80px 0 120px;
+	}
+.cgames-section-inner {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0;
+	}
+/***** Casino games heading block *****/
+.cgames-heading-cont {
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0 15px;
+	}
+.cgames-heading-block {
+	float: left;
+	position: relative;
+	width: 100%;
+	min-height: 130px;
+	margin: 0;
+	padding: 25px 25px 25px 115px;
+	border-bottom-width: 1px;
+	border-style: solid;
+	border-color: #cedee3;
+	border-radius: 5px;
+	background-color: #fff;
+	}
+.cgames-heading-block.icon-dices:before {
+	position: absolute;
+	top: 38px;
+	left: 38px;
+	font-size: 52px;
+	color: #ed5889;
+	}
+.cgames-heading-block > span {
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'msbold';
+	font-size: 26px;
+	color: #5e5e5e;
+	text-transform: uppercase;
+	}
+.cgames-heading-block > p {
+	float: left;
+	width: 100%;
+	margin: 11px 0 0 0;
+	padding: 0;
+	font-family: 'hindlight';
+	font-size: 15px;
+	color: #8f8f8f;
+	line-height: 1.5;
+	}
+/***** Casino games blocks *****/
+.cgames-blocks-wrapper {
+	float: left;
+	width: 100%;
+	margin: 15px 0 0 0;
+	padding: 0;
+	}
+.cgames-block {
+	float: left;
+	width: 50%;
+	margin: 0;
+	padding: 15px;
+	}
+.cgames-block-inner {
+	float: left;
+	position: relative;
+	width: 100%;
+	min-height: 185px;
+	margin: 0;
+	padding: 46px 20px 46px 160px;
+	border-bottom-width: 1px;
+	border-style: solid;
+	border-color: #cedee3;
+	border-radius: 5px;
+	background-color: #fff;
+	}
+.cgames-block-inner > img {
+	position: absolute;
+	top: 35px;
+	left: 22px;
+	width: 115px;
+	height: 115px;
+	border-width: 3px;
+	border-style: solid;
+	border-color: #cedee3;
+	border-radius: 60px;
+	}
+/* Casino games badge */
+.cgames-bonus-badge {
+	position: absolute;
+	top: -10px;
+	right: 20px;
+	width: 60px;
+	height: 40px;
+	margin: 0;
+	padding: 7px 7px 17px 7px;
+	font-family: 'msbold';
+	font-size: 15px;
+	color: #fff;
+	text-align: center;
+	background-color: #ed5889;
+	border-bottom-width: 1px;
+	border-style: solid;
+	border-color: #ae2c57;
+	}
+.cgames-bonus-badge:after {
+	content: "bonus";
+	font-family: 'hindmedium';
+	font-size: 10px;
+	color: #ffffff;
+	text-align: center;
+	position: absolute;
+	bottom: 5px;
+	left: 0px;
+	text-transform: uppercase;
+	width: 100%;
+}
+.cgames-bonus-badge:before {
+	content: "";
+	top: 0px;
+	left: -5px;
+
+	border-right: 5px solid #ae2c57;
+	border-top: 10px solid transparent;
+	border-bottom: 0px solid transparent;
+	position: absolute;
+}
+/* Casino games block info */
+.cgames-block-inner .cgames-info {
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	}
+.cgames-block-inner .cgames-info > span {
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0 0px 3px 0px;
+	font-family: 'msbold';
+	font-size: 18px;
+	color: #5e5e5e;
+	text-transform: uppercase;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	}
+.cgames-block-inner .cgames-info > p {
+	float: left;
+	width: 100%;
+	margin: 15px 0 0 0;
+	padding: 0;
+	font-family: 'hindlight';
+	font-size: 13px;
+	color: #8f8f8f;
+	line-height: 1.5;
+	}
+
+/* Casino games play link */
+.cgames-play-link-wrapper {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+	margin: 0;
+	padding: 0;
+	}
+.cgames-play-link {
+	float: left;
+	margin: 0;
+	padding: 0;
+	color: #a1d767;
+	text-decoration: none;
+	-webkit-transition: .3s;
+	   -moz-transition: .3s;
+	     -o-transition: .3s;
+	}
+.cgames-play-link:hover {
+	color: #abe072;
+	}
+.cgames-play-link.icon-triangle:before {
+	font-size: 17px;
+	}
+.cgames-link-tooltip {
+	position: absolute;
+	right: -6px;
+	bottom: 35px;
+	height: 22px;
+	margin: 0;
+	padding: 5px 15px;
+	font-family: 'msreg';
+	font-size: 11px;
+	color: #fff;
+	white-space: nowrap;
+	border-radius: 3px;
+	background-color: #414141;
+	-webkit-transition: .3s;
+	   -moz-transition: .3s;
+	     -o-transition: .3s;
+
+	opacity: 0;
+	visibility: hidden;
+	}
+.cgames-link-tooltip:before {
+	content: '';
+	position: absolute;
+	right: 10px;
+	bottom: -6px;
+
+	border-top: 6px solid #414141;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	}
+.cgames-play-link:hover ~ .cgames-link-tooltip {
+	bottom: 25px;
+
+	opacity: 1;
+	visibility: visible;
+	}
+/* ----------------------------------------------------------
+
+SPORTSBOOK SECTION
+
+---------------------------------------------------------- */
+.sportsbook-section {
+	float: left;
+	width: 100%;
+	min-height: 155px;
+	margin: 0;
+	padding: 0;
+	background-color: #414141;
+	}
+.sportsbook-section-inner {
+	position: relative;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 0 0 235px;
+	}
+.sportsbook-section-inner > img {
+	position: absolute;
+	top: -45px;
+	left: 15px;
+	width: 170px;
+	height: 224px;
+	margin: 0;
+	padding: 0;
+	}
+.sportsbook-section-inner > div {
+	float: left;
+	position: relative;
+	width: 100%;
+	margin: 0;
+	padding: 32px 215px 31px 0px;
+	}
+.sportsbook-section-inner > div > span {
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'msbold';
+	font-size: 36px;
+	color: #fff;
+	text-transform: uppercase;
+	}
+.sportsbook-section-inner > div > p {
+	float: left;
+	width: 100%;
+	margin: 8px 0 0 0;
+	padding: 0;
+	font-family: 'hindlight';
+	font-size: 16px;
+	color: #fff;
+	line-height: 1.5;
+	}
+.sportsbook-section-inner > div > p > i {
+	font-family: 'msbold';
+	color: #ed5889;
+	}
+.sportsbook-section-inner > div > a {
+	position: absolute;
+	top: 37px;
+	right: 15px;
+	width: 180px;
+	height: 80px;
+	margin: 0;
+	padding: 14px 15px;
+	font-family: 'msbold';
+	font-size: 18px;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	line-height: 1.3;
+	border-width: 3px;
+	border-style: solid;
+	border-color: #fff;
+	border-radius: 5px;
+	}
+.sportsbook-section-inner > div > a:after {
+	content: "";
+	width: 177px;
+	height: 77px;
+	position: absolute;
+	top: -3px;
+	left: -3px;
+	border-width: 1px;
+	border-style: dashed;
+	border-color: #ffffff;
+	border-radius: 6px;
+	-webkit-transition: .1s;
+	   -moz-transition: .1s;
+	     -o-transition: .1s;
+	-webkit-transition-delay: .1s;
+	   -moz-transition-delay: .1s;
+	     -o-transition-delay: .1s; 
+}
+.sportsbook-section-inner > div > a:hover:after {
+	width: 184px;
+	height: 84px;
+	left: -6px;
+	top: -6px;
+	border-color: #ffffff;
+}
+/* ----------------------------------------------------------
+
+GET APPLICATION SECTION
+
+---------------------------------------------------------- */
+.get-app-section {
+	float: left;
+	width: 100%;
+	height: 100%;
+	max-height: 680px;
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+	overflow: hidden;
+	}
+.get-app-section-inner {
+	position: relative;
+	width: 100%;
+	max-width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+	padding: 210px 490px 150px 15px;
+	}
+.get-app-section-text {
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	}
+.get-app-section-text > span {
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0 0 0 25px;
+	font-family: 'msbold';
+	font-size: 36px;
+	color: #5e5e5e;
+	border-left-width: 3px;
+	border-style: solid;
+	border-color: #ed5889;
+	}
+.get-app-section-text > p {
+	float: left;
+	width: 100%;
+	margin: 55px 0 0 0;
+	padding: 0 0 0 28px;
+	font-family: 'hindlight';
+	font-size: 18px;
+	color: #5e5e5e;
+	line-height: 1.5;
+	}
+/* Get application buttons */
+.get-app-section-text > div {
+	float: left;
+	width: 100%;
+	margin: 55px 0 0 0;
+	padding: 0 0px 0px 25px;
+	}
+.get-app-section-text > div > a {
+	float: left;
+	position: relative;
+	width: 170px;
+	height: 45px;
+	margin: 0 20px 0 0;
+	padding: 13px 40px 13px 15px;
+	font-family: 'msbold';
+	font-size: 15px;
+	color: #bbb;
+	text-decoration: none;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #bbb;
+	border-radius: 5px;
+	-webkit-transition: .3s;
+	   -moz-transition: .3s;
+	     -o-transition: .3s;
+	}
+.get-app-ios.icon-ios:before {
+	position: absolute;
+	top: 8px;
+	right: 10px;
+	}
+.get-app-android.icon-android:before {
+	position: absolute;
+	top: 9px;
+	right: 10px;
+	}
+.get-app-section-text > div > a:after {
+	content: "";
+	width: 168px;
+	height: 43px;
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	border-width: 1px;
+	border-style: dashed;
+	border-color: #bbb;
+	border-radius: 6px;
+	-webkit-transition: .1s;
+	   -moz-transition: .1s;
+	     -o-transition: .1s;
+	-webkit-transition-delay: .1s;
+	   -moz-transition-delay: .1s;
+	     -o-transition-delay: .1s;     
+}
+.get-app-section-text > div > a:hover {
+	border-color: #a1d767;
+	color: #a1d767;
+}
+.get-app-section-text > div > a:hover:after {
+	width: 174px;
+	height: 49px;
+	left: -5px;
+	top: -5px;
+	border-color: #a1d767;
+}
+
+/***** Get application mobile image *****/
+.get-app-mobile-image {
+	position: absolute;
+	right: -120px;
+	bottom: 0;
+	width: 561px;
+	height: 535px;
+	margin: 0;
+	padding: 0;
+	background-image: url(../images/getapp-mobile-image-bg.png);
+	background-repeat: no-repeat;
+	}
+.get-app-mobile-image > div {
+	overflow: hidden;
+	float: left;
+	position: relative;
+	width: 100%;
+	width: 337px;
+	height: 445px;
+	margin: 90px 35px 0;
+	padding: 0;
+	}
+.ga-mobile-image-inner {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	-webkit-animation: animateGetAppImage 30s infinite;
+	   -moz-animation: animateGetAppImage 30s infinite;
+	     -o-animation: animateGetAppImage 30s infinite;
+	        animation: animateGetAppImage 30s infinite;
+	}
+@-webkit-keyframes animateGetAppImage {
+	0% {top: 0px;}
+	50% {top: -190%;}
+	100% {top: 0px;}
+	}
+@-moz-keyframes animateGetAppImage {
+	0% {top: 0px;}
+	50% {top: -190%;}
+	100% {top: 0px;}
+	}
+@-o-keyframes animateGetAppImage {
+	0% {top: 0px;}
+	50% {top: -190%;}
+	100% {top: 0px;}
+	}
+@keyframes animateGetAppImage {
+	0% {top: 0px;}
+	50% {top: -190%;}
+	100% {top: 0px;}
+	}
+
+/* ----------------------------------------------------------
+
+FOOTER
+
+---------------------------------------------------------- */
+.footer {
+	float: left;
+	width: 100%;
+	min-height: 300px;
+	margin: 0;
+	padding: 0;
+	background-color: #91c855;
+	}
+.footer-inner {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 40px 0 0 0;
+	}
+/***** Footer navigation container *****/
+.footer-navigation-cont {
+	float: left;
+	width: 40%;
+	margin: 0;
+	padding: 0 10px 0 0;
+	border-right-width: 1px;
+	border-style: solid;
+	border-color: #7eb246;
+	}
+.footer-navigation-cont > div {
+	float: left;
+	width: 50%;
+	margin: 0;
+	padding: 0 15px;
+	}
+.footer-navigation-cont > div > span {
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0 0 10px 0;
+	font-family: 'msbold';
+	font-size: 14px;
+	color: #fff;
+	text-transform: uppercase;
+	border-bottom-width: 1px;
+	border-style: solid;
+	border-color: #fff;
+	}
+.footer-navigation-cont > div > ul {
+	float: left;
+	width: 100%;
+	margin: 15px 0 0 0;
+	padding: 0;
+	}
+.footer-navigation-cont > div > ul > li {
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 8px 0;
+	list-style: none;
+	}
+.footer-navigation-cont > div > ul > li > a {
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'hindlight';
+	font-style: 14px;
+	color: #fff;
+	text-decoration: none;
+	}
+.footer-navigation-cont > div > ul > li > a:hover {
+	text-decoration: underline;
+	}
+
+/***** Footer subscription container *****/
+.footer-subscription-cont {
+	float: left;
+	width: 40%;
+	min-height: 190px;
+	margin: 0;
+	padding: 0 25px;
+	border-right-width: 1px;
+	border-style: solid;
+	border-color: #7eb246;
+	}
+.footer-subscription-cont > span {
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0 0 10px 0;
+	font-family: 'msbold';
+	font-size: 14px;
+	color: #fff;
+	text-transform: uppercase;
+	border-bottom-width: 1px;
+	border-style: solid;
+	border-color: #fff;
+	}
+.footer-subscription-cont > p {
+	float: left;
+	width: 100%;
+	margin: 20px 0 0 0;
+	padding: 0;
+	font-family: 'hindlight';
+	font-size: 14px;
+	color: #fff;
+	line-height: 1.5;
+	}
+form.footer-subscription-form {
+	float: left;
+	width: 100%;
+	margin: 15px 0 0 0;
+	padding: 0;
+	}
+form.footer-subscription-form > button {
+	float: right;
+	width: 100px;
+	height: 35px;
+	margin: 15px 0 0 0;
+	padding: 0;
+	font-family: 'msbold';
+	font-size: 14px;
+	color: #fff;
+	text-transform: uppercase;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #fff;
+	border-radius: 5px;
+	background-color: transparent;
+
+	cursor: pointer;
+	position: relative;
+	}
+form.footer-subscription-form > button:after {
+	content: "";
+	width: 98px;
+	height: 33px;
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	border-width: 1px;
+	border-style: dashed;
+	border-color: #ffffff;
+	border-radius: 6px;
+	-webkit-transition: .1s;
+	   -moz-transition: .1s;
+	     -o-transition: .1s;
+	-webkit-transition-delay: .1s;
+	   -moz-transition-delay: .1s;
+	     -o-transition-delay: .1s; 
+}
+form.footer-subscription-form > button:hover:after {
+	width: 104px;
+	height: 39px;
+	left: -5px;
+	top: -5px;
+	border-color: #ffffff;
+}
+.form-group {
+	float: left;
+	position: relative;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	}
+.form-group > input[type='email'] {
+	float: left;
+	width: 100%;
+	height: 40px;
+	margin: 0;
+	padding: 0 25px;
+	font-family: 'msreg';
+	font-size: 14px;
+	color: #fff;
+	border-width: 0;
+	border-top-width: 2px;
+	border-style: solid;
+	border-color: #77ad3c;
+	border-radius: 5px;
+	background-color: #a1d767;
+	}
+
+/***** Footer social container *****/
+.footer-social-cont {
+	float: left;
+	width: 20%;
+	margin: 0;
+	padding: 0 15px 0 25px;
+	}
+.footer-social-cont > span {
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0 0 10px 0;
+	font-family: 'msbold';
+	font-size: 14px;
+	color: #fff;
+	text-transform: uppercase;
+	border-bottom-width: 1px;
+	border-style: solid;
+	border-color: #fff;
+	}
+.footer-social-cont > ul {
+	float: left;
+	width: 100%;
+	margin: 15px 0 0 0;
+	padding: 0;
+	text-align: center;
+	}
+.footer-social-cont > ul > li {
+	float: left;
+	margin: 0 15px 0 0;
+	padding: 0;
+	list-style: none;
+	}
+.footer-social-cont > ul > li > a {
+	float: left;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	text-decoration: none;
+	position: relative;
+	}
+.footer-social-cont > ul > li > a:after {
+	content: "";
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	border-width: 1px;
+	border-style: dotted;
+	border-color: #ffffff;
+	border-radius: 15px;
+	-webkit-transition: .1s;
+	   -moz-transition: .1s;
+	     -o-transition: .1s;
+	-webkit-transition-delay: .1s;
+	   -moz-transition-delay: .1s;
+	     -o-transition-delay: .1s; 
+}
+.footer-social-cont > ul > li > a:hover:after {
+	width: 27px;
+	height: 28px;
+	left: -4px;
+	top: -3px;
+	border-color: #ffffff;
+}
+
+/***** Footer copyright text *****/
+span.footer-copyright-text {
+	float: left;
+	width: 100%;
+	margin: 25px 0 0 0;
+	padding: 15px 0;
+	font-family: 'hindlight';
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	border-top-width: 1px;
+	border-style: solid;
+	border-color: #7eb246;
+	}
+
+/* ----------------------------------------------------------
+
+MEDIA QUERIES
+
+---------------------------------------------------------- */
+
+@media all and (max-width: 1366px) { 
+	/* Hero section */
+	img.hero-player-image {
+		width: 450px;
+		height: 422px;
+	}
+	.hero-section-stripe, .hero-section-stripe:before, .hero-section-stripe:after, .hero-section-stripe-action {
+		height: 60px;
+	}
+	.hero-section-stripe-action {
+		padding: 5px 25px;
+		margin-right: 11%;
+	}
+	.hero-section-stripe-action > span {
+		font-size: 18px;
+		padding: 9px 15px 0px 0px;
+	}
+	.hero-section-stripe-action > a {
+		height: 45px;
+		font-size: 18px;
+		padding: 10px;
+		margin: 4px;
+	}
+	.hero-section-stripe-action > a:after {
+		height: 42px;
+	}
+	.hero-section-stripe-action > a:hover:after {
+		height: 49px;
+	}
+}
+
+@media all and (max-width: 1500px) {
+	/* Hero section */
+	.hero-section-text {
+		margin-top: 125px;
+	}
+}
+@media all and (max-width: 990px) { 
+	/* Get application section */
+	.get-app-section-inner {
+		padding-top: 170px;
+	}
+	.get-app-section-text > span {
+		font-size: 28px;
+	}
+	.get-app-section-text > p {
+		font-size: 15px;
+	}
+}
+@media all and (max-width: 930px) {
+	/* Hero section */
+	.hero-section-text {
+		margin-top: 90px;
+		max-width: 490px;
+	}
+	.hero-section-text > h2 {
+		font-size: 42px;
+	}
+	.hero-section-text > h1 {
+		font-size: 65px;
+	}
+	.hero-section-text > p {
+		font-size: 18px;
+	}
+
+
+	/* Get application section */
+	.get-app-section-inner {
+		padding-right: 300px;
+	}
+	.get-app-section-text > div > a {
+		width: 100%;
+		margin-top: 20px;
+	}
+	.get-app-section-text > div > a:first-of-type {
+		margin-top: 0px;
+	}
+	.get-app-section-text > div > a:after {
+		width: calc(100% + 2px);
+	}
+	.get-app-section-text > div > a:hover:after {
+		width: calc(100% + 8px);
+	}
+	.get-app-mobile-image {
+		right: -280px;
+	}
+}
+
+@media all and (max-width: 880px) {
+	/* Casino games section */
+	.cgames-block {
+		width: 100%;
+	}
+}
+
+@media all and (max-width: 780px) {
+	/* Footer */
+	.footer-navigation-cont {
+		width: 50%;
+	}
+	.footer-subscription-cont {
+		width: 50%;
+	}
+	.footer-social-cont {
+		width: 100%;
+		margin-top: 30px;
+		padding: 0px 25px;
+	}
+}
+
+@media all and (max-width: 768px) { 
+	/* Hero section */
+	.hero-section-stripe-action {
+		margin-right: 50%;
+		right: -215px;
+	}
+	img.hero-player-image {
+		display: none;
+	}
+	.hero-section-text {
+		max-width: 100%;
+		padding: 0px 15px;
+	}
+
+	/* Sportsbook section */
+	.sportsbook-section-inner {
+		padding-left: 170px;
+	}
+	.sportsbook-section-inner > div {
+		padding-right: 15px;
+	}
+	.sportsbook-section-inner > div > a {
+		position: relative;
+		float: left;
+		top: auto;
+		right: auto;
+		width: 280px;
+		height: 50px;
+		padding: 12px 15px;
+		margin-top: 15px;
+	}
+	.sportsbook-section-inner > div > a:after {
+		width: 277px;
+		height: 47px;
+	}
+	.sportsbook-section-inner > div > a:hover:after {
+		width: 284px;
+		height: 54px;
+	}
+	.sportsbook-section-inner > img {
+		width: 100px;
+		height: 132px;
+		left: 30px;
+		top: 45px;
+	}
+}
+
+@media all and (max-width: 660px) {
+	/* Get application section */
+	.get-app-section {
+		max-height: auto;
+		height: auto;
+	}
+	.get-app-section-inner {
+		float: left;
+		padding: 100px;
+	}
+	.get-app-mobile-image {
+		display: none;
+	}
+}
+@media all and (max-width: 630px) {
+	.footer-navigation-cont {
+		width: 100%;
+		padding: 0px 10px;
+		border-right: 0px;
+	}
+	.footer-subscription-cont {
+		width: 100%;
+		margin-top: 30px;
+		border-right: 0px;
+	}
+}
+
+@media all and (max-width: 550px) {
+	/* Get application section */
+	.get-app-section-inner {
+		padding: 50px;
+	}
+}
+
+
+@media all and (max-width: 480px) {
+	/* Sportsbook section */
+	.sportsbook-section-inner {
+		padding-left: 0px;
+	}
+	.sportsbook-section-inner > div {
+		text-align: center;
+		padding-left: 15px;
+	}
+	.sportsbook-section-inner > img {
+		display: none;
+	}
+	.sportsbook-section-inner > div > a {
+		float: none;
+		display: inline-block;
+	}
+	/* Get application section */
+	.get-app-section-inner {
+		padding: 50px 20px;
+	}
+}
+
+
+@media all and (max-width: 460px) {
+	/* Hero section */
+	.hero-section-stripe-action {
+		right: -148px;
+	}
+	.hero-section-stripe-action > span {
+		display: none;
+	}
+}
+
